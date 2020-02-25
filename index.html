@@ -4,12 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Bootstrap links-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!--Bootstrap Ends-->
+
+    <!--Link to the css file, icon and font-->
     <link href="static/index.css" rel="stylesheet">
     <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+
+    <!--Title name-->
     <title>Osu Adefolarin</title>
 </head>
 <body>
-    <h1>Osu Adefolarin</h1>
-    <p>This is just the beginning</p>
+    <div class="container">
+        <header>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#about">About</a>
+                </li>
+              </ul>
+        </header>
+       
+        <div class="tab-content">            
+            <!--Home Tab-->
+            <div class="tab-pane container active" id="home">
+                Projects
+            </div>
+
+            <!--About Tab-->
+            <div class="tab-pane container fade" id="about">
+                <h1>Osu Adefolarin</h1>
+            </div>
+            
+            <!--Contact tab-->
+            <div class="tab-pane container fade" id="contact">
+                email and phone contacts 
+            </div>
+            
+          </div>
+    </div>
 </body>
 </html>

@@ -1,4 +1,10 @@
 body {
     background-image: url('background.jpg');
     color: whitesmoke;
+    font-family: 'Source Sans Pro',Helvetica, sans-serif;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: whitesmoke;
 }
