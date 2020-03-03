@@ -18,7 +18,7 @@
 
     <!--Link to the css file, icon and font-->
     <link href="static/index.css" rel="stylesheet">
-    <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
 
     <!--Title name-->
@@ -43,12 +43,95 @@
         <div class="tab-content">            
             <!--Home Tab-->
             <div class="tab-pane container active" id="home">
-                Projects
+                <!--First row-->
+                <div class="row">
+                    <div class="col-sm-4 pt-5">
+                      <div class="card bg-dark">
+                            <img class="card-img-top" src="cards/card.png" alt="Email Service">
+                            <div class="card-body">
+                                <h5 class="card-title">Email Service</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#emailService">See more</a>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 pt-5">
+                      <div class="card bg-dark">
+                        <img class="card-img-top" src="cards/card.png" alt="Email Service">
+                        <div class="card-body">
+                          <h5 class="card-title">Spam Bot</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">See more</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 pt-5">
+                        <div class="card bg-dark">
+                            <img class="card-img-top" src="cards/card.png" alt="Email Service">
+                          <div class="card-body">
+                            <h5 class="card-title">Arcade Game(CLI)</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">See more</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>               
+
+                <!--Second Row-->
+                <div class="row">
+                    <div class="col-sm-4 pt-5">
+                      <div class="card bg-dark">
+                        <img class="card-img-top" src="cards/card.png" alt="Email Service">
+                        <div class="card-body">
+                          <h5 class="card-title">Card Game</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">See more</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 pt-5">
+                      <div class="card bg-dark">
+                        <img class="card-img-top" src="cards/card.png" alt="Email Service">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">See more</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 pt-5">
+                        <div class="card bg-dark">
+                            <img class="card-img-top" src="cards/card.png" alt="Email Service">
+                          <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">See more</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+                    <!-- Modal for Email Service-->
+                    <div class="modal fade" id="emailService" tabindex="-1" role="dialog" aria-labelledby="emailService" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="emailServiceTitle">Email Service</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <!--Body goes here-->
+                            </div>
+                        </div>
+                        </div>
+                    </div>
             </div>
 
             <!--About Tab-->
             <div class="tab-pane container fade" id="about">
-                <h1>Osu Adefolarin</h1>
+                <p id="download" class="pt-2"><a class="btn btn-bd-download bg-primary" href="files/OsuAdefolarinCv08.09.19.pdf" download="Osu_Adefolarin">Download</a></p>
             </div>
             
             <!--Contact tab-->
@@ -58,5 +141,12 @@
             
           </div>
     </div>
+    <footer class="page-footer font-small fixed-bottom">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center">
+            © 2020 Copyright: Osu Adefolarin
+        </div>
+        <!-- Copyright -->
+      </footer>
 </body>
 </html>

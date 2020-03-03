@@ -1,5 +1,6 @@
 body {
-    background-image: url('background_1.jpg');
+    background-image: url('background.jpg'), url('background_1.jpg');
+    background-color: grey;
     color: whitesmoke;
     font-family: 'Source Sans Pro',Helvetica, sans-serif;
 }
@@ -7,4 +8,12 @@ body {
 a, a:hover{
     text-decoration: none;
     color: whitesmoke;
+}
+
+.card {
+    color: whitesmoke;
+}
+
+#download{
+    float: right;
 }
