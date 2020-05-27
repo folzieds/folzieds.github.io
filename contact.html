@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!--Bootstrap links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--Bootstrap Ends-->
+
+    <!--Link to the css file, icon and font-->
+    <link href="static/css/index.css" rel="stylesheet">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+
+
+    <title>Osu Adefolarin</title>
+</head>
+<body>
+
+    <div class="container-fluid full-height">
+        <div class="row full-height">
+            <!--Side bar-->
+            <div class="col-sm-3 side-bar">
+                <a href="portfolio.html">
+                    <div class="profile-image">
+                        <img id="image" src="static/img/profile.jpg" alt="profile picture">
+                    </div>
+                    <div class="profile-name">
+                        <h1 class="profile-title">Osu Adefolarin</h1>
+                        <h2 class="profile-description">Full-Stack Software Engineer</h2>
+                    </div>
+                </a>
+                <nav class="main-navigation">
+                    <div>
+                        <ul>
+                            <li class><a href="portfolio.html">Portfolio</a></li>
+                            <li class><a href="about.html">About</a></li>
+                            <li class="current"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="block-social">
+                    <div class="block-title"><p>Get in touch</p></div>
+                    <div class="block-content">
+                        <a href="mailto:folzieds@gmail.com" class="button-icon" title="mail: folzieds@gmail.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/folzieds" class="button-icon" target="_blank">
+                            <i class="fa fa-github-square"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/adefolarin/" class="button-icon" target="_blank">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Main Bar-->
+            <div class="col-sm-9 main-bar">
+                <div class="container">
+                    <div class=" row mt-5">
+                        <div class="col">
+                            <h2 class="contact-header">Get in Touch</h2>
+                            <p>I am available for hire and open to any ideas of cooperation.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <form method="GET" action="http://localhost:8000/email/">
+                                <div class="form-row">
+                                    <div class="col-6 form-group col-12-xsmall"><input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email"></div>
+                                    <div class="col-6 form-group col-12-xsmall"><input name="contact" type="text" class="form-control" id="contactName" placeholder="Name"></div>
+                                    <div class="col-12 form-group"><textarea name="message" class="form-control" id="message" placeholder="Message" rows="12"></textarea></div>
+                                </div>
+                                <button id="submit-button" type="submit" class="btn btn-outline-dark">Send Message</button>
+                                <!--Javascript section-->
+                                <script type="text/javascript">
+                                    document.getElementById("submit-button").onclick = function(){
+                                        var newAlert = document.createElement("div");
+                                        newAlert.classList = ["alert", "alert-success"];
+                                        //location.href = "contact.html";
+                                    };
+                                </script>
+                            </form>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="labeled-icons">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <p class="icon solid fa fa-mobile" style="font-size: 30px;"></p>
+                                        </div>
+                                        <div class="col-10">
+                                            <p>+234 703 224 2301</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <p class="icon solid fa fa-envelope" style="font-size: 18px;"></p>
+                                        </div>
+                                        <div class="col-10">
+                                            <a href="mailto:folzieds@gmail.com">folzieds@gmail.com</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <p class="icon solid fa fa-linkedin-square" style="font-size: 20px;"></p>
+                                        </div>
+                                        <div class="col-10">
+                                            <a href="https://www.linkedin.com/in/adefolarin/" target="_blank">Osu Adefolarin</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <p class="icon solid fa fa-github-square" style="font-size: 20px;"></p>
+                                        </div>
+                                        <div class="col-10">
+                                            <a href="https://github.com/folzieds" target="_blank">folzieds</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <!--Footer begins here-->
+    <footer class="page-footer fixed-bottom">
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            © 2020 Copyright: Osu Adefolarin
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--Footer ends-->
+
+    <!--Bootstrap scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

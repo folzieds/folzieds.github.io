@@ -1,0 +1,197 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    background-image: url("../img/bridge.jpg");
+    background-size: cover;
+    font-family: Roboto, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto;
+    color: #BB1E1E;
+}
+
+p{
+    font-family: Roboto;
+}
+
+.full-height{
+    height: 100%;
+}
+
+.side-bar{
+    background-color:rgba(50,50,50,.8);
+    color: rgba(255,255,255,0.6);
+    position: fixed;
+    height: 100%;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+}
+
+a, a:hover {
+    text-decoration: none;
+    color:inherit;
+}
+
+.profile-image{
+    text-align: center;
+    padding: 20% 0 5% 0;
+}
+#image {
+    border-radius: 50%  
+}
+
+.main-navigation a:hover:after,
+.main-navigation .current a:after{
+    content:"\f105";
+    padding-left:3px;
+    font-family:FontAwesome;
+    color:whitesmoke;
+}
+
+.main-navigation .current{
+    color: whitesmoke;
+}
+
+.main-navigation a:hover , 
+.block-social a:hover{
+    color: whitesmoke;
+}
+
+.profile-title{
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.profile-description{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.main-navigation{
+    margin: 45px -40px;
+    line-height: 30px;
+    position: relative;
+    font-size: 14px;
+}
+
+.main-navigation ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+}
+
+.main-navigation ul li{
+    padding: 0% 10%;
+}
+
+.block-social{
+    font-size: 22px;
+    padding: 0% 10%;
+}
+
+.block-title{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.button-icon{
+    margin-right: 2%;
+}
+
+.main-bar{
+    background:whitesmoke;
+    overflow: auto;
+    margin-left: 25%;
+}
+
+footer{
+    color: whitesmoke;
+    font-size: 11px;
+    padding: 0% 5%;
+}
+
+.about-page{
+    margin-top: 70px;
+    background: #ffffee;
+    width: 90%;
+    box-shadow:5px 5px 5px grey;
+}
+
+#summary{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+#skill-icon{
+    display: inline-block;
+    text-align:left;
+}
+
+.skill-list{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+
+.company{
+    background-color: #eee;
+    margin-bottom: 5px;
+}
+
+.date-location{
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+.download{
+    text-align: right;
+    color: #BB1E1E;
+}
+
+.landing{
+    margin-top: 10%;
+    margin-left: 25%;
+    color: #fff;
+}
+
+.home-heading{
+    color: #fff;
+    font-size: 50px;
+}
+
+.home-subheading{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.home-link{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#experience ul {
+    list-style: square;
+}
+
+@media screen and (max-height: 450px) {
+    .side-bar {padding-top: 15px;}
+    .side-bar .main-navigation ul {font-size: 18px;}
+  }
