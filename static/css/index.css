@@ -85,6 +85,7 @@ a, a:hover {
     line-height: 30px;
     position: relative;
     font-size: 14px;
+    color: whitesmoke;
 }
 
 .main-navigation ul{
@@ -190,6 +191,11 @@ footer{
 
 #experience ul {
     list-style: square;
+}
+
+#portfolio-title{
+    margin-top: 40px;
+    margin-left:10px;
 }
 
 @media screen and (max-height: 450px) {
